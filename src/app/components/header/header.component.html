@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg">
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon d-flex justify-content-center align-items-center"><i
+        class="fa-solid fa-bars"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/my-space" routerLinkActive="active-nav">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span class="nav-text">My Space</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active-nav">
+          <i class="fa-solid fa-house-chimney"></i>
+          <span class="nav-text">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/events" routerLinkActive="active-nav">
+          <i class="fa-solid fa-trophy"></i>
+          <span class="nav-text">Events</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/videos" routerLinkActive="active-nav">
+          <i class="fa-brands fa-youtube"></i>
+          <span class="nav-text">Videos</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/live" routerLinkActive="active-nav">
+          <i class="fa-solid fa-house-chimney"></i>
+          <span class="nav-text">Live</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink='/register' routerLinkActive="active-nav">
+          <i class="fa-solid fa-user-plus"></i>
+          <span class="nav-text">Register</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item" *ngIf="isDark">
+        <button class="theme-button" (click)="changeTheme('light')"><i class="fa-solid fa-moon"></i></button>
+      </li>
+      <li class="nav-item" *ngIf="isLight">
+        <button class="theme-button ml-lg-2" (click)="changeTheme('dark')"><i class="fa-solid fa-sun"></i></button>
+      </li>
+    </ul>
+  </div>
+</nav>

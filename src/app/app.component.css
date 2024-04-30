@@ -1,12 +1,9 @@
-<style>
-        /* Style the text */
-        .colored-text span {
-            font-size: 100px;
-            font-weight: bold;
-            background: linear-gradient(to bottom, red 50%, yellow 50%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
-            margin: 0 5px;
-        }
-    </style>
+.main-wrapper {
+  height: calc(100vh - 55.6px);
+  background-color: white;
+}
+
+.dark {
+  background-color: black;
+  color: white !important;
+}

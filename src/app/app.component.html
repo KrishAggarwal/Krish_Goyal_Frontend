@@ -1,5 +1,8 @@
-<div class="colored-text">
-  <span>D</span>
-  <span>O</span>
-  <span>G</span>
+<div class="container-fluid px-0">
+  <div class="header-wrapper">
+    <app-header></app-header>
+  </div>
+  <div class="main-wrapper" [ngClass]="{'dark':isDark}">
+    <router-outlet></router-outlet>
+  </div>
 </div>

@@ -1,0 +1,57 @@
+.colored-text {
+  font-size: 250px;
+  font-weight: bold;
+  display: inline-block;
+  font-family: "Schibsted Grotesk", sans-serif;
+
+  /* Linear gradient for the text color */
+  background: linear-gradient(to bottom, red 45%, #ffc800 45%);
+  /* Clip background to the text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.colored-text-shadow {
+  font-size: 250px;
+  font-weight: bold;
+  display: inline-block;
+  font-family: "Schibsted Grotesk", sans-serif;
+
+  /* Linear gradient for the text color */
+  background: linear-gradient(to bottom, #ffc800 45%, red 45%);
+  /* Clip background to the text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49.4%, -49.2%);
+}
+
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  z-index: 10;
+  object-fit: cover;
+}
+
+
+@media only screen and (max-width:576px) {
+
+  .colored-text,
+  .colored-text-shadow {
+    font-size: 150px;
+  }
+  img{
+    height:100px;
+    width:80px;
+  }
+}

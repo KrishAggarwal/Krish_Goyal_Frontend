@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #141469;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.nav-link i{
+  font-size:13px;
+}
+
+.nav-text{
+  margin-left:5px;
+}
+
+.nav-link.active-nav {
+  color: white;
+}
+
+
+.navbar-toggler{
+  border:1px solid white;
+  color:white !important
+}
+
+.theme-button{
+  background:transparent;
+  border:1px solid white;
+  border-radius: 10px;
+  padding:10px 15px;
+  color:white;
+  font-size: 16px;
+}
